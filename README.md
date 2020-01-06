@@ -1,9 +1,14 @@
 # gitlab-quan-xian
 
 Gitlab权限管理
-Gitlab用户在组中有五种权限：Guest、Reporter、Developer、Master、Owner
+Gitlab用户在组中有五种权限：
+- Guest
+- Reporter
+- Developer
+- Master
+- Owner
 
-Guest：可以创建issue、发表评论，不能读写版本库
+Guest：可以创建issue、发表评论，不能读写版本库\n
 Reporter：可以克隆代码，不能提交，QA、PM可以赋予这个权限
 Developer：可以克隆代码、开发、提交、push，RD可以赋予这个权限
 Master：可以创建项目、添加tag、保护分支、添加项目成员、编辑项目，核心RD负责人可以赋予这个权限
