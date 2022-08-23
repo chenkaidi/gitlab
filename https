@@ -1,14 +1,12 @@
 # vim /etc/gitlab/gitlab.rb
+
+### 行替换，不是替换文件
 external_url 'gitlab.chenkaidi.com'
-
 nginx['enable'] = true
-nginx['redirect_http_to_https'] = true    #http重定向到https
+nginx['redirect_http_to_https'] = true
 nginx['redirect_http_to_https_port'] = 80
-nginx['redirect_http_to_https'] = true    #http重定向到https，使用http的访问会自动重定向到https；
-nginx['redirect_http_to_https_port'] = 80
-
-nginx['ssl_certificate'] = "/etc/gitlab/ssl/server.crt"
-nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/server.key"
+nginx['ssl_certificate'] = "/etc/gitlab/ssl/gitlab.chenkaidi.com.crt"
+nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/gitlab.chenkaidi.com.key"
 
 上传证书
 
